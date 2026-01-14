@@ -4,13 +4,22 @@ public class Person {
 	String FirstName;
 	String LastName;
 	char Gender;
-	
+	int number;
 	
 
-	public Person(String fn,String ln,char g) {
+	public int getNumber() {
+		return number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
+	}
+
+	public Person(String fn,String ln,char g,int num) {
 		this.FirstName = fn;
 		this.LastName = ln;
 		this.Gender = g;
+		this.number = num;
 	}
 	
 	public String getFirstName() {
@@ -33,8 +42,7 @@ public class Person {
 	}
 	
 public static void main(String args[]) {
-	Person p = new Person();
-	p.setFirstName("Tanisha");
+	Person p = new Person("Tanisha", "Agarwal" , 'F',138038308);
 	System.out.println(p.getFirstName());
 }
 }
