@@ -40,6 +40,32 @@ public class TC_RegularExpression {
         }else {
         	System.out.println("Invalid Phone Number");
         }
+        
+        
+
+        String input2= "Exo1";
+		String regex2 = "^[A-Z][a-z]+[0-9]$";    
+        Pattern p2 = Pattern.compile(regex2);
+        Matcher m2 = p2.matcher(input2);
+        boolean result2 = m2.matches();
+        
+        if(result2 == true) {
+        	System.out.println("Is Matching");
+        }else {
+        	System.out.println("Not Matching");
+        }
+        
+        String email= "test.user@gmail.com";
+		String regex3 ="^[A-Za-z0-9._%+-]+@[A-Za-z0-9._%+-]+\\.[A-Za-z]{2,}$"; 
+        Pattern p3 = Pattern.compile(regex3);
+        Matcher m3 = p3.matcher(email);
+        boolean result3 = m3.matches();
+        
+        if(result3 == true) {
+        	System.out.println("Email Is Matching");
+        }else {
+        	System.out.println("Email Not Matching");
+        }
 	}
 
 }
