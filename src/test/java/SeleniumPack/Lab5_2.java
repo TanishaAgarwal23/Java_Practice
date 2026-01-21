@@ -13,7 +13,7 @@ public class Lab5_2 {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
  
-WebDriverManager.firefoxdriver().setup();
+        WebDriverManager.firefoxdriver().setup();
 		WebDriver dr = new FirefoxDriver();
 		dr.get("https://tutorialsninja.com/demo/index.php?");
 
@@ -28,6 +28,10 @@ WebDriverManager.firefoxdriver().setup();
 		dr.findElement(By.xpath("//*[@id=\"input-email\"]")).sendKeys(email);
 		String phone = sc.nextLine()	;
 		dr.findElement(By.xpath("//*[@id=\"input-telephone\"]")).sendKeys(phone);
+		String password = sc.nextLine();
+		dr.findElement(By.xpath("//*[@id=\"input-password\"]")).sendKeys(password);
+		dr.findElement(By.xpath("//*[@id=\"input-confirm\"]")).sendKeys(password);
+		dr.findElement(By.xpath("//*[@id=\"content\"]/form/fieldset[3]/div/div/label[1]/input")).click();
 		dr.findElement(By.xpath("//*[@id=\"content\"]/form/div/div/input[1]")).click();
 		dr.findElement(By.xpath("//input[@value='Continue']")).click();
 
@@ -57,7 +61,17 @@ WebDriverManager.firefoxdriver().setup();
 			String phonerror= dr.findElement(By.xpath("//*[@id=\"account\"]/div[5]/div/div")).getText();
 		    System.out.println("Error is: " + phonerror);	
 		}
-
+		if (password.length()>=4 && password.length()<=20 ){
+			System.out.println("valid password");
+		}
+		else {
+			String passworderror = dr.findElement(By.xpath("//*[@id=\"content\"]/form/fieldset[2]/div[1]/div/div")).getText();
+			System.out.println(passworderror);
+		}
+		String confirm = dr.findElement(By.xpath("//*[@id=\"content\"]/div/div/a"	)).getText();
+		System.out.println(confirm);
+		dr.findElement(By.xpath("//*[@id=\"content\"]/div/div/a")).click();
+		dr.findElement(By.xpath("//*[@id=\"content\"]/ul[2]/li[1]/a")).click();
 
 }
 }
