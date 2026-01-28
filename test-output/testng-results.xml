@@ -1,85 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-27T11:38:36 IST" name="Default suite" finished-at="2026-01-27T11:39:14 IST" duration-ms="38132">
+  <suite started-at="2026-01-28T12:07:48 IST" name="Default suite" finished-at="2026-01-28T12:08:01 IST" duration-ms="12686">
     <groups>
     </groups>
-    <test started-at="2026-01-27T11:38:36 IST" name="Default test" finished-at="2026-01-27T11:39:14 IST" duration-ms="38132">
-      <class name="SeleniumPack.TC_TestNGTest_PageFactory">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:SeleniumPack.TC_TestNGTest_PageFactory@4d1c00d0]" started-at="2026-01-27T11:38:36 IST" name="beforeSuite" finished-at="2026-01-27T11:38:36 IST" duration-ms="14" status="PASS">
+    <test started-at="2026-01-28T12:07:48 IST" name="Default test" finished-at="2026-01-28T12:08:01 IST" duration-ms="12686">
+      <class name="SeleniumPack.Lab_12">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:SeleniumPack.Lab_12@4116aac9]" started-at="2026-01-28T12:07:48 IST" name="setUp" finished-at="2026-01-28T12:07:51 IST" duration-ms="3480" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:SeleniumPack.TC_TestNGTest_PageFactory@4d1c00d0]" started-at="2026-01-27T11:38:36 IST" name="beforeTest" finished-at="2026-01-27T11:38:36 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="Lab_4()[pri:0, instance:SeleniumPack.Lab_12@4116aac9]" started-at="2026-01-28T12:07:52 IST" name="Lab_4" finished-at="2026-01-28T12:08:00 IST" duration-ms="8704" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:SeleniumPack.TC_TestNGTest_PageFactory@4d1c00d0]" started-at="2026-01-27T11:38:36 IST" name="beforeClass" finished-at="2026-01-27T11:38:36 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Lab_4 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SeleniumPack.Lab_12@4116aac9]" started-at="2026-01-28T12:08:00 IST" name="tearDown" finished-at="2026-01-28T12:08:01 IST" duration-ms="442" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPack.TC_TestNGTest_PageFactory@4d1c00d0]" started-at="2026-01-27T11:38:36 IST" name="beforeMethod" finished-at="2026-01-27T11:38:41 IST" duration-ms="4371" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:SeleniumPack.TC_TestNGTest_PageFactory@4d1c00d0]" started-at="2026-01-27T11:38:41 IST" name="f" data-provider="dp" finished-at="2026-01-27T11:38:53 IST" duration-ms="12598" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:SeleniumPack.TC_TestNGTest_PageFactory@4d1c00d0]" started-at="2026-01-27T11:38:53 IST" name="afterMethod" finished-at="2026-01-27T11:38:54 IST" duration-ms="522" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPack.TC_TestNGTest_PageFactory@4d1c00d0]" started-at="2026-01-27T11:38:54 IST" name="beforeMethod" finished-at="2026-01-27T11:38:56 IST" duration-ms="1907" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:SeleniumPack.TC_TestNGTest_PageFactory@4d1c00d0]" started-at="2026-01-27T11:38:56 IST" name="f" data-provider="dp" finished-at="2026-01-27T11:39:14 IST" duration-ms="18000" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:SeleniumPack.TC_TestNGTest_PageFactory@4d1c00d0]" started-at="2026-01-27T11:39:14 IST" name="afterMethod" finished-at="2026-01-27T11:39:14 IST" duration-ms="674" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:SeleniumPack.TC_TestNGTest_PageFactory@4d1c00d0]" started-at="2026-01-27T11:39:14 IST" name="afterClass" finished-at="2026-01-27T11:39:14 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:SeleniumPack.TC_TestNGTest_PageFactory@4d1c00d0]" started-at="2026-01-27T11:39:14 IST" name="afterTest" finished-at="2026-01-27T11:39:14 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:SeleniumPack.TC_TestNGTest_PageFactory@4d1c00d0]" started-at="2026-01-27T11:39:15 IST" name="afterSuite" finished-at="2026-01-27T11:39:15 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- SeleniumPack.TC_TestNGTest_PageFactory -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- SeleniumPack.Lab_12 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

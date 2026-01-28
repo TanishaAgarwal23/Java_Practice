@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumPack.TC_ParallelTest">
+      <class name="SeleniumPack.Lab_12">
         <methods>
-          <include name="teardown"/>
-          <include name="test1"/>
-          <include name="setup"/>
-          <include name="test3"/>
-          <include name="test2"/>
+          <include name="Lab_4"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- SeleniumPack.TC_ParallelTest -->
+      </class> <!-- SeleniumPack.Lab_12 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
