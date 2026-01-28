@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumPack.Lab_12">
+      <class name="com.orhrm.tests.logintest">
         <methods>
-          <include name="Lab_4"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="verifylogin" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- SeleniumPack.Lab_12 -->
+      </class> <!-- com.orhrm.tests.logintest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
