@@ -10,8 +10,7 @@ public class Login_POM {
 	By password=By.name("password");
 	By submitbutton=By.xpath("//button[@type='submit']");
 	By dashboard=By.xpath("//h6[text()='Dashboard']");
-	
-	public Login_POM(WebDriver driver2) {
+public Login_POM(WebDriver driver2) {
 		
 		this.driver=driver2;
 		
@@ -37,5 +36,5 @@ public class Login_POM {
 	{
 		return driver.findElement(dashboard).isDisplayed();
 	}
- 
+	
 }

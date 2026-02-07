@@ -12,7 +12,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  
 public class BaseTest {
  
-	protected WebDriver driver;
+	protected static  WebDriver driver;
 	@BeforeMethod
 	  public void beforeMethod() {
 		  System.out.println("This is Before Method");
@@ -20,12 +20,13 @@ public class BaseTest {
 			WebDriverManager.edgedriver().setup();
 			driver=new EdgeDriver();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			
 	  }
  
-	  @AfterMethod
-	  public void afterMethod() {
-		  System.out.println("This is After Method");
-		  driver.quit();
-	  }
+//	  @AfterMethod
+//	  public void afterMethod() {
+//		  System.out.println("This is After Method");
+//		  driver.quit();
+//	  }
 }
  
